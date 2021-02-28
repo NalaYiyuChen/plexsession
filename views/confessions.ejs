@@ -1,0 +1,27 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>PLEXSESSIONS</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <script src="/main.js"></script>
+        <h2> Confessions </h2>
+        <ul class="confessions">
+        <!-- Loop through quotes -->
+        <% for(var i = 0; i < confessions.length; i++) {%>
+            <li class="confession">
+            <!-- Output name from the iterated quote object -->
+            <span><%= confessions[i].confession %>
+                  <form action="/approve_confession" method="PUT">
+                    <button class="approveThisConfession" type="submit">approve meee</button>
+                </form>   
+            </span>
+            </li>
+        <% } %>
+        </ul>
+            <form action="/back" method="POST">
+                <button type="submit">Log out</button>
+            </form>    
+        </body>
+</html>

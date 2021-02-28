@@ -1,0 +1,36 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>PLEXSESSIONS</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <h1>Submit an Anonymous Confession</h1>
+            <form action="/confession" method="POST">
+                <!-- <input type="text" placeholder="name" name="name"> -->
+                <input type="text" placeholder="type your confession" name="confession">
+                <button type="submit">SUBMIT</button>
+            </form>
+        <h2>Login as Admin</h2>
+        <form action="/login" method="POST">
+            <input type="text" placeholder="username" name="username">
+            <input type="text" placeholder="password" name="password">
+            <button type="submit">LOGIN</button>
+        </form>
+        <!-- <div id="confessionsDiv">
+            <script type="text/javascript"> -->
+                <!-- var x = document.getElementById('confessionsDiv')
+            </script> -->
+            <!-- <h2> Confessions </h2> -->
+            <!-- <ul class="confessions"> -->
+            <!-- Loop through quotes -->
+            <!-- <% for(var i = 0; i < confessions.length; i++) {%> -->
+                <!-- <li class="confession"> -->
+                <!-- Output name from the iterated quote object -->
+                <!-- <span><%= confessions[i].confession %></span> -->
+                <!-- </li> -->
+            <!-- <% } %> -->
+            <!-- </ul> -->
+        <!-- </div>  -->
+    </body>
+</html>
